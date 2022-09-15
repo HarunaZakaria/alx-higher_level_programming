@@ -1,10 +1,14 @@
 #!/usr/bin/python3
-""" Defining a class square """
+# 0-square.py by Haruna Zakaria
+"""Defines a square """
+
 
 class Square:
-    """ Defining a class square """
+    """Represents a square"""
+
     def __init__(self, size):
-        """ Initializing a square class
-        Args: size: size of the square
-         """
-         self.__size = size
+        """Initializing this square class
+        Args: size - represnets the size of the square defined
+        """
+
+        self.__size = size
