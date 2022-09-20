@@ -16,11 +16,11 @@ class Rectangle:
         self.height = height
         Rectangle.number_of_instances += 1
 
-    @propert
+    @property
     def width(self):
         return (self.__width)
 
-    @width.sette
+    @width.setter
     def width(self, value):
         if type(value) is not int:
             raise TypeError("width must be an integer")
@@ -80,4 +80,5 @@ class Rectangle:
     @classmethod
     def square(cls, size=0):
         """Return a new instance of rec with dimensions == size"""
+        return cls(size, size)mensions == size"""
         return cls(size, size)
