@@ -1,8 +1,7 @@
-#!/usr/bin/python3
-"""Rectangle module"""
-
+!#/bin/python3
+"""Rectangle  class"""
 
 
 class Rectangle:
-    """ Rectangle class"""
+    """Rectangle class"""
     pass
