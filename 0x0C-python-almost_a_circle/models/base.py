@@ -36,7 +36,7 @@ class Base:
         """Save JSON representation to file"""
         file_name = cls.__name__ + ".json"
         with open(file_name, "w") as jsonfile:
-            if list_objs is None
+            if list_objs is None:
                 jsonfile.write("[]")
             else:
                 list_dicts = [o.to_dictionary() for o in list_objs]
@@ -88,9 +88,7 @@ class Base:
 
         # if (type(list_objs) != list and list_objs is not None
         #    or not all(isinstance(i, cls) for i in list_objs)):
-
         #     raise TypeError("list_objs must be a list of instances")
-
         # file_name = cls.__name__ + ".csv"
         # with open(file_name, 'w') as my_file:
         #     if list_objs is not None:
@@ -122,9 +120,8 @@ class Base:
 
         # file_name = cls.__name__ + ".csv"
         # list_of_instances = []
-        # if os.path.exists(file_name)
-
-        #     with open(file_name, 'r') as my_file
+        # if os.path.exists(file_name):
+        #     with open(file_name, 'r') as my_file:
         #         reader = csv.reader(my_file, delimiter=',')
         #         if cls.__name__ == 'Rectangle':
         #             records = ['id', 'width', 'height', 'x', 'y']
@@ -134,8 +131,7 @@ class Base:
         #             if i > 0:
         #                 x = cls(1, 1)
         #                 for j, y in enumerate(row):
-        #                     if y
-
+        #                     if y:
         #                         setattr(x, records[j], int(y))
         #                 list_of_instances.append(x)
         # return list_of_instances
