@@ -57,7 +57,6 @@ class Rectangle(Base):
         if value <= 0:
             raise ValueError("height must be > 0")
 
-
         self.__height = value
 
     @x.setter
@@ -78,6 +77,7 @@ class Rectangle(Base):
             raise TypeError("y must be an integer")
 
         if value < 0:
+
             raise ValueError("y must be >= 0")
 
         self.__y = value
@@ -108,7 +108,7 @@ class Rectangle(Base):
         if args and len(args) != 0:
             a = 0
             for arg in args:
-                if a == 0
+                if a == 0:
                     if arg is None:
                         self.__init__(self.width, self.height, self.x, self.y)
                     else:
@@ -145,6 +145,5 @@ class Rectangle(Base):
         obj_dictionary = {'id': self.id, 'width': self.__width,
                           'height': self.__height, 'x': self.__x,
                           'y': self.__y}
-
 
         return obj_dictionary
